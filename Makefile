@@ -74,7 +74,7 @@ clean:
 venv:
 	@echo $(H1)Creating a Python environment $(VENV_ROOT) $(H1END)
 
-	$(SYSTEM_PYTHON) -m venv --prompt httpie $(VENV_ROOT)
+	$(SYSTEM_PYTHON) -m venv -system-site-packages --prompt httpie $(VENV_ROOT)
 
 	@echo
 	@echo done.
